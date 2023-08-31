@@ -1,0 +1,38 @@
+@use 'variables';
+
+@mixin font_base{
+    font-style: normal;
+}
+@mixin nav_font($color: variables.$default_color_1){
+    color: $color;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+    text-decoration: none;
+}
+@mixin footer_small_font($color: variables.$default_gray){
+
+    color: $color;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.36px;
+    text-decoration: none;
+}
+@mixin button_states($border_color, $bg_color, $font_color){
+    border: 1px solid $border_color;
+    background: $bg_color,;
+    color: $font_color;
+}
+@mixin article_labels(){
+    color: #9D9DB5;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; 
+}
+
